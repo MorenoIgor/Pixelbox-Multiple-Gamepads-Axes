@@ -207,7 +207,9 @@ var getGamepads = GAMEPAD_AVAILABLE ? getAllGamepads : getGamepadsFallback;
  * @return {Gamepad} gamepads merged state
  */
 function getAnyGamepad() {
+	//***
 	var gamepads = navigator.getGamepads();
+	//***
 	// buttons
 	for (var i = 0; i < MAPPING_BUTTONS.length; i++) {
 		var key = MAPPING_BUTTONS[i];
