@@ -215,6 +215,7 @@ function getAnyGamepad() {
 		ANY_GAMEPADS.btnr[key] = btnr[key] || GAMEPADS[0].btnr[key] || GAMEPADS[1].btnr[key] || GAMEPADS[2].btnr[key] || GAMEPADS[3].btnr[key];
 		ANY_GAMEPADS.btn[key]  = btn[key]  || GAMEPADS[0].btn[key]  || GAMEPADS[1].btn[key]  || GAMEPADS[2].btn[key]  || GAMEPADS[3].btn[key];
 
+		//*** ONLY CHANGED AREA ***
 		//Axes handling
 		var globalx = 0, globaly = 0, globalz = 0, globalw = 0, count = 0;
 		for (var gamepadIndex = 0; gamepadIndex < 4; gamepadIndex++) {
@@ -232,6 +233,8 @@ function getAnyGamepad() {
 		ANY_GAMEPADS.y = globaly/count;
 		ANY_GAMEPADS.z = globalz/count;
 		ANY_GAMEPADS.w = globalw/count;
+		
+		//***
 
 	}
 
